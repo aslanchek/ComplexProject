@@ -1,2 +1,2 @@
 # ComplexProject
-testing mulilibs project using cmake
+testing multilibs project using cmake
