@@ -1,0 +1,6 @@
+[submodule "extlibs/eigen"]
+	path = extlibs/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "extlibs/SFML"]
+	path = extlibs/SFML
+	url = git@github.com:SFML/SFML.git
