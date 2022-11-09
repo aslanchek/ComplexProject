@@ -1,12 +1,19 @@
 cmake_minimum_required(VERSION 3.1)
 
-
 project(sfml_render)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(SFML_DIR extlibs/SFML/build/)
+set(SFML_STATIC_LIBRARIES TRUE)
+
+find_package(SFML COMPONENTS system window graphics)
+find_package(Eigen3 COMPONENTS Dense)
 
 set(EXECUTABLE_NAME project)
 
-include_directories(extlibs/SFML)
-
 add_executable(${EXECUTABLE_NAME} src/main.cpp)
 
-target_link_libraries(${EXECUTABLE_NAME} PUBLIC SFML)
+target_link_libraries(${EXECUTABLE_NAME} sfml-graphics sfml-window sfml-system)
+target_link_libraries(${EXECUTABLE_NAME} Eigen3::Eigen)
