@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include <eigen/Eigen3/Dense>
+#include <eigen3/Eigen/Dense>
 
 int main()
 {

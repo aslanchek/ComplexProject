@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SFML_DIR extlibs/SFML/build/)
 set(SFML_STATIC_LIBRARIES TRUE)
 
-find_package(SFML COMPONENTS system window graphics)
+find_library(SFML COMPONENTS system window graphics)
 find_package(Eigen3 COMPONENTS Dense)
 
 set(EXECUTABLE_NAME project)
