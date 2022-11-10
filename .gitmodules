@@ -5,5 +5,5 @@
 	path = extlibs/SFML
 	url = git@github.com:SFML/SFML.git
 [submodule "extlibs/json"]
-  path = extlibs/json
-  urt = git@github.com:nlohmann/json.git
+	path = extlibs/json
+	url = git@github.com:nlohmann/json.git
